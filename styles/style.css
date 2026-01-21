@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.work-sans {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+}
 .btn{
     width: 135px;
     height: 44px;
@@ -100,7 +109,9 @@
     background: linear-gradient( to top right, #facc15, #fb7185,  #d946ef, #7c3aed );
     margin-top: auto;
     margin-bottom: auto;
+    text-align: center;
     padding: 6px;
+    padding-top: 9px;
     font-size: 16px;
     display: flex;
     gap: 8px;
@@ -189,7 +200,7 @@
     height: 1276px;
     background-color: #1A0B2E;
     padding-left: 150px;
-    padding-right: 200px;
+    padding-right: 150px;
     padding-top: 90px; 
 }
 .feature-episode{
@@ -199,15 +210,15 @@
     gap: 30px;
 }
 .episude-box{
-    width: 380px;
-    height: 440px;
+    width: 300px;
+    height: 420px;
     border-radius: 15px;
     background-color: #250D44;
     /* border: 1px solid white; */
 }
 .episude-box iframe{
-    width: 380px;
-    height: 214px;
+    width: 300px;
+    height: 168px;
     border-radius: 15px;
 }
 .son{
@@ -258,6 +269,36 @@
 }
 .meet-text{
     gap: 40px;
+}
+footer{
+    background-image: url(../assets/footer-bg.png); 
+    width: 100%;
+    height: 412px;
+    margin-top: 0px;
+    padding: 120px;
+}
+.footer-contant{
+     justify-content: center;
+     align-items: center;
+     justify-items: center;
+    
+
+}
+.sponsor{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+}
+.sponsor li{
+   display: flex;
+   gap: 10px;
+}
+.sponsor li img{
+    width: 24px;
+    height: 24px;
 }
 @media screen and (max-width:576px){
      .navbar-item , .btn{
@@ -315,13 +356,44 @@
   .feature-episode{
     grid-template-columns: repeat(1 , 1fr);
     margin-left: 0px;
-    padding: 0px;
+    padding-left: 60px;
+    
   
   }
   .feature{
-    margin-left: 0px;
+    margin-left: 0px ;
     margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 3400px;
   }
+  .meet-box{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+  }
+  .div-img ul{
+      margin-left: 110px;
+  }
+   .sponsor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   }
+   footer{
+    background-image: url(../assets/footer-bg.png);
+    width: 100%;
+
+   }
+   .footer-contant{
+    margin: 0px;
+    margin-bottom: 50px;
+    padding: 0px;
+   }
+   .footer-contant p{
+    font-size: 11px;
+   }
 }
 @keyframes spin{
   from{
